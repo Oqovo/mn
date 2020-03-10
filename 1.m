@@ -64,8 +64,8 @@ while (n<n_max)
  
 end
 
-figure('Name', 'Suma powierzchni');
+figure('Name', 'Area');
 semilogx(1:n, sumarea);
    
-figure('Name', 'Srednia liczba losowan');
+figure('Name', 'Avg draws');
 loglog(cumsum(sumdraws)./(linspace(1,n,n)));
