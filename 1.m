@@ -30,21 +30,21 @@ while (n<n_max)
     end
   end
   
-  crossing = false;
+  intersect = false;
   for i = 1:n
     dx = x-vx(i);
     dy = y-vy(i);
     d = sqrt(dx*dx + dy*dy);
     if ( d < vr(i) + r && d > abs(vr(i) - r))
-     crossing = true;
+     intersect = true;
      break;
     elseif (d == vr(i) + r)
-     crossing = true;
+     intersect = true;
      break;
     end
   end
   
-  if (crossing == false)
+  if (inttersect == false)
       n = n + 1;
       axis equal
       plot_circ(x,y,r);
